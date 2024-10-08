@@ -167,10 +167,9 @@ nav.active {
 .btn--restro{
   box-sizing: border-box;
   display: flex;
-  margin-bottom: 30px;
+  margin: 40px 0 40px 40px;
   justify-content: center;
   text-align: center;
-  /* margin: 10px 10px; */
 }
 
 /* Responsive para la sección de inicio */
@@ -220,7 +219,6 @@ nav.active {
   padding: 20px;
   scroll-snap-align: start;
   background-image: url('');
-
   /* Scroll fluido */
 } 
 
@@ -234,8 +232,13 @@ nav.active {
   padding:0 0 25px 0;
 }
 .menu-item:hover {
+  transform: scale(0.9);
   background-color:lightgray;
-  transition: all ease-in;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu-item:active {
+  transform: scale(1.1);
+  transition: all 1s ease-out;
 }
 /* Scroll personalizado */
 .menu-grid::-webkit-scrollbar {
@@ -543,5 +546,8 @@ footer {
 @media (min-width:1063px) {
   .menu-grid {
     justify-content: center;
+  }
+  .btn--restro{
+    display: none;
   }
 }
