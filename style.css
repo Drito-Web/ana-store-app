@@ -201,6 +201,10 @@ nav.active {
   /* Scroll horizontal */
   padding-bottom: 20px;
 }
+.menu-grid a {
+  text-decoration: none;
+  color: black;
+}
 
 .menu-item {
   flex: 0 0 auto;
