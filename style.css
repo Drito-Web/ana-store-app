@@ -204,7 +204,7 @@ nav.active {
 
 .menu-item {
   flex: 0 0 auto;
-  min-width: 150px;
+  min-width: 350px;
   width: 200px;
   height: auto;
   overflow: hidden;
@@ -216,7 +216,7 @@ nav.active {
   padding: 20px;
   scroll-snap-align: start;
   background-image: url('');
-  
+
   /* Scroll fluido */
 } 
 
@@ -535,4 +535,9 @@ footer {
     font-size: 1.2rem;
     color: #b5651d;
     font-weight: bold;
+}
+@media (min-width:1063px) {
+  .menu-grid {
+    justify-content: center;
+  }
 }
